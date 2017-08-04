@@ -21,6 +21,18 @@ function compareReversed(c, d) { //создадим функцию, котора
     return d - c;
 }
 
-console.log(evenNumbers); //проверяем что приходит в массив в консоли
+console.log(evenNumbers); //проверяем, что приходит в массив в консоли
+console.log(oddNumbers); //проверяем, что приходит в массив в консоли
 
-console.log(oddNumbers); //проверяем что приходит в массив в консоли
+function getEvenNumbers() { //создадим функцию, которая выведет массив evenNumbers в DOM-дерево
+    var elem = document.getElementById('evenNumbers'); // выбираем элемент, в который хотим вывести массив
+    elem.innerHTML = evenNumbers; // выводим в DOM массив четных чисел evenNumbers
+}
+
+function getOddNumbers() { //создадим функцию, которая выведет массив oddNumbers в DOM-дерево
+    var elem = document.getElementById('oddNumbers'); // выбираем элемент, в который хотим вывести массив
+    elem.innerHTML = oddNumbers; //выводим в DOM массив нечетных чисел oddNumbers
+}
+
+getEvenNumbers(); // выполним функцию
+getOddNumbers(); // выполним функцию
