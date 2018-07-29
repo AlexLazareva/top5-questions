@@ -29,6 +29,7 @@ function getEvenNumbers() { //создадим функцию, которая в
     elem.innerHTML = evenNumbers; // выводим в DOM массив четных чисел evenNumbers
 }
 
+// вывести отсортированные элементы в html-разметку
 function getOddNumbers() { //создадим функцию, которая выведет массив oddNumbers в DOM-дерево
     var elem = document.getElementById('oddNumbers'); // выбираем элемент, в который хотим вывести массив
     elem.innerHTML = oddNumbers; //выводим в DOM массив нечетных чисел oddNumbers
